@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function palindrome(){
+            let rem,temp,final=0;
+            let num=+prompt("enter no");
+            temp=num;
+            while(num>0){
+                rem=num%10;
+                num=Math.trunc(num/10);
+                final=final*10+rem;
+            }
+            if(final==temp){
+                console.log("no is palindrome');
+            }else{
+                console.log("no is not palindrome");
+            }
+        }
+        palindrome();
+    </script>
+</body>
+</html>

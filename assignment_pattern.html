@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Pattern Assignment</title>
+</head>
+<body>
+<script>
+
+    let name=prompt("enter name");
+    let n=+prompt("enter size");
+    let char=prompt("enter char");
+    for(let i=0;i<name.length;i++){
+        // let letter=name[i].toUpperCase
+            switch(name[i]){
+                case  'A' :
+                A(n);
+                break;
+    
+                case  `B` :
+                B(n);
+                break;
+
+                case  `C` :
+                C(n);
+                break;
+
+                case  `D` :
+                D(n);
+                break; 
+
+                case  `E` :
+                E(n);
+                break;
+
+
+                case  `F` :
+                F(n);
+                break;
+
+
+                case  `G` :
+                G(n);
+                break;
+
+                case  'H' :
+                H(n);
+                break;
+            
+                case  `I` :
+                I(n);
+                break;
+
+                case  `J` :
+                J(n);
+                break;
+
+                case  `K` :
+                K(n);
+                break; 
+
+                case  `L` :
+                L(n);
+                break;
+
+                case  `M` :
+                M(n);
+                break;
+
+                case  `N` :
+                N(n);
+                break;
+
+                case  'O' :
+                O(n);
+                break;
+                
+                case  `P` :
+                P(n);
+                break;
+
+                case `Q` :
+                Q(n);
+                break;
+
+                case  `R` :
+                R(n);
+                break;
+
+                case  `S` :
+                S(n);
+                break; 
+
+                case  `T` :
+                T(n);
+                break;
+            
+                case  `U` :
+                U(n);
+                break;
+
+
+                case  `V` :
+                V(n);
+                break;
+
+                case  'W' :
+                W(n);
+                break;
+            
+                case  `X` :
+                X(n);
+                break;
+
+                case  `Y` :
+                Y(n);
+                break;
+
+                case  `Z` :
+                Z(n);
+                break;
+
+            default:
+            console.log("nothing");
+            }
+    }
+    console.log("  ");
+
+
+    function A(num){
+        //console.log(n);
+        pattern="";
+        for(let row=1;row<=n;row++){
+            for(let col=1;col<=n;col++){
+            pattern+=(col==1 ||(row==1 && col<=Math.trunc(1+n/2)) ||(row==Math.trunc(1+n/2) 
+            && col<=Math.trunc(1+n/2))  || col==Math.trunc(1+n/2))?`${char}`:" ";
+            }
+            pattern+="\n"
+        }
+        console.log(pattern)
+    }
+
+function B(num){
+    //let n=+prompt()
+    pattern="";
+    for(let row=1;row<=n;row++){
+        for(let col=1;col<=n;col++){
+            pattern+=(col==1 ||(row==1 && col<=Math.trunc(1+n/2)) || (row==Math.trunc(1+n/2) && 
+            col<=Math.trunc(n/2)) || (row==n && col<=Math.trunc(1+n/2))  || 
+            (col==Math.trunc(1+n/2) && row!=Math.trunc(1+n/2)))?`${char}`:` `;
+        }
+        pattern+="\n"
+    }
+    console.log(pattern)
+}
+//B();
+
+
+function C(num){
+    //let n=+prompt()
+    pattern="";
+    for(let row=1;row<=n;row++){
+        for(let col=1;col<=n;col++){
+            pattern+=(col==1 || row==1 || row==n )?`${char}`:` `;
+        }
+        pattern+="\n"
+    }
+console.log(pattern)
+}
+//C();
+
+function D(num){
+    //let n=+prompt()
+    pattern="";
+    for(let row=1;row<=n;row++){
+        for(let col=1;col<=n;col++){
+        pattern+=(col==n || col==Math.trunc(n/2)  || row==1 || row==n )?`${char}`:` `;
+        }
+        pattern+="\n"
+    }
+console.log(pattern)
+}
+//D();
+
+
+function E(num){
+    //let n=+prompt()
+    pattern="";
+    for(let row=1;row<=n;row++){
+        for(let col=1;col<=n;col++){
+            pattern+=(col==1 || row==1 || row==n  || (row==Math.trunc(1+n/2) && 
+            col<=(Math.trunc(1+n/2))))?`${char}`:` `;
+        }
+        pattern+="\n"
+    }
+console.log(pattern)
+}
+//E();
+
+
+function F(num){
+    //let n=+prompt()
+    pattern="";
+    for(let row=1;row<=n;row++){
+        for(let col=1;col<=n;col++){
+            pattern+=(col==1 || row==1 ||  (row==Math.trunc(1+n/2) && 
+            col<=(Math.trunc(1+n/2))))?`${char}`:` `;
+        }
+        pattern+="\n"
+    }
+console.log(pattern)
+}
+//F();
+
+function G(num){
+    //let n=+prompt()
+    pattern="";
+    for(let row=1;row<=n;row++){
+        for(let col=1;col<=n;col++){
+        pattern+=(col==1 || row==1 || row==n || (row>=Math.trunc(n/2)  && col==n) || (row==Math.trunc(n/2) &&col>Math.trunc(n/2) ))?`${char}`:` `;
+        }
+        pattern+="\n"
+    }
+console.log(pattern);
+}
+//G();
+
+
+function H(num){
+    //let n=+prompt()
+    pattern="";
+    for(let row=1;row<=n;row++){
+        for(let col=1;col<=n;col++){
+            pattern+=(col==1 || row==Math.trunc(1+n/2) || col==n )?`$char`:` `;
+        }
+        pattern+="\n"
+    }
+console.log(pattern)
+}
+//H();
+
+
+function I(num){
+    //let n=+prompt()
+    pattern="";
+    for(let row=1;row<=n;row++){
+        for(let col=1;col<=1;col++){
+            pattern+=`$char`
+        }
+        pattern+="\n"
+    }
+console.log(pattern)
+}
+//I();
+
+
+function J(num){
+    //let n=+prompt()
+    pattern="";
+    for(let row=1;row<=n;row++){
+        for(let col=1;col<=n;col++){
+            pattern+=(row==1 || col==Math.trunc(1+n/2) ||(row==n && col<=Math.trunc(n/2) ) ||(row>Math.trunc(1+n/2) && col==1 ))?`$char`:` `;
+        }
+        pattern+="\n"
+    }
+console.log(pattern)
+}
+//J();
+
+
+function k(num){
+    //let n=+prompt()
+    pattern="";
+    for(let row=1;row<=n;row++){
+        for(let col=1;col<=n;col++){
+            pattern+=(col==1 || (row<=Math.trunc(1+n/2) && col==Math.trunc(1+n/2)-row+1) 
+            ||(row>=Math.trunc(1+n/2) && col==row-Math.trunc(1+n/2)+1)  )?`$char`:` `;
+        }
+        pattern+="\n"
+    }
+console.log(pattern)
+}
+//k();
+
+
+function L(num){
+   // let n=+prompt()
+    pattern="";
+    for(let row=1;row<=n;row++){
+        for(let col=1;col<=n;col++){
+            pattern+=(col==1 ||  row==n)?`$char`:` `;
+        }
+        pattern+="\n"
+    }
+console.log(pattern)
+}
+//L();
+
+
+function M(num){
+   /// let n=+prompt()
+    pattern="";
+    for(let row=1;row<=n;row++){
+        for(let col=1;col<=n;col++){
+            pattern+=( (row<=Math.trunc(1+n/2) && col==row) || (row<=Math.trunc(1+n/2) 
+            && col==n-row+1)|| col==1 || col==n)?`$char`:` `;
+        }
+        pattern+="\n"
+    }
+console.log(pattern)
+}
+//M();
+
+
+function N(num){
+    //let n=+prompt()
+    pattern="";
+    for(let row=1;row<=n;row++){
+        for(let col=1;col<=n;col++){
+            pattern+=(row==col || col==1 || col==n)?`$char`:` `;
+        }
+        pattern+="\n"
+    }
+console.log(pattern)
+}
+//N();
+
+
+function O(num){
+//let n=+prompt()
+    pattern="";
+    for(let row=1;row<=n;row++){
+        for(let col=1;col<=n;col++){
+            pattern+=(row==1  || row==n || col==1 || col==n)?`$char`:` `;
+        }
+        pattern+="\n"
+    }
+console.log(pattern)
+}
+//O();
+
+
+function P(num){
+   // let n=+prompt()
+    pattern="";
+    for(let row=1;row<=n;row++){
+        for(let col=1;col<=n;col++){
+            pattern+=(col==1 || row==1 ||  row==Math.trunc(1+n/2) || 
+            (col==n && row<=Math.trunc(1+n/2)))?`$char`:` `;
+        }
+        pattern+="\n"
+    }
+console.log(pattern)
+}
+//P();
+
+
+function Q(num){
+    //let n=+prompt()
+    pattern="";
+    for(let row=1;row<=n;row++){
+        for(let col=1;col<=n;col++){
+            pattern+=( row==1 || row==Math.trunc(1+n/2) || (col==1 && row<=Math.trunc(1+n/2))
+            || (col==n && row<=Math.trunc(1+n/2)) || (row>Math.trunc(1+n/2) && col==row))
+            ?`$char`:` `;
+        }
+        pattern+="\n"
+    }
+console.log(pattern)
+}
+//Q();
+
+
+function R(num){
+    //let n=+prompt()
+    pattern="";
+    for(let row=1;row<=n;row++){
+        for(let col=1;col<=n;col++){
+            pattern+=( (row==1 && col<=Math.trunc(1+n/2)) || (row==Math.trunc(1+n/2) && 
+            col<=Math.trunc(1+n/2)) || (col==1)|| (col==Math.trunc(1+n/2) && 
+            row<=Math.trunc(1+n/2)) ||(row>=Math.trunc(1+n/2) && col==row-Math.trunc(1+n/2)+1))
+            ?`$char`:` `;
+        }
+        pattern+="\n"
+    }
+console.log(pattern)
+}
+//R();
+
+
+function S(num){
+    //let n=+prompt()
+    pattern="";
+    for(let row=1;row<=n;row++){
+        for(let col=1;col<=n;col++){
+            pattern+=(row==1 || row==n || row==Math.trunc(1+n/2) || 
+            (col==1 && row<=Math.trunc(n/2) ) ||  (col==n && row>Math.trunc(n/2)))?`$char`:` `;
+        }
+        pattern+="\n"
+    }
+console.log(pattern)
+}
+//S();
+
+
+function T(num){
+    //let n=+prompt()
+    pattern=""
+    for(let row=1;row<=n;row++){
+        for(let col=1;col<=n;col++){
+            pattern+=(row==1 || col==Math.trunc(1+n/2) )?`$char`:` `;
+        }
+        pattern+="\n"
+    }
+console.log(pattern)
+}
+//T();
+
+
+function  U(num){
+    //let n=+prompt()
+    pattern=""
+    for(let row=1;row<=n;row++){
+        for(let col=1;col<=n;col++){
+            pattern+=(col==1 || row==n || col ==n)?`$char`:` `;
+        }
+        pattern+="\n"
+    }
+console.log(pattern)
+}
+//U();
+
+function V(num){
+    //let n=+prompt()
+    pattern="";
+    for(let row=1;row<=n;row++){
+        for(let col=1;col<=10;col++){
+            pattern+=(row===col || col+row===10)?`$char`:` `;
+        }
+        pattern+="\n";
+    }
+    console.log(pattern);
+}
+//V();
+
+
+function w(num){
+    //let n=+prompt()
+    pattern="";
+    for(let row=1;row<=n;row++){
+        for(let col=1;col<=n;col++){
+        pattern+=(col==1 || col==n ||  (row>=Math.trunc(1+n/2) && col==row) ||(row>=Math.trunc(1+n/2) && col==n-row+1) )?`$char`:` `;
+        }
+        pattern+="\n"
+    }
+console.log(pattern)
+}
+//w();
+
+
+function X(num){
+    //let n=+prompt()
+    pattern=""
+    for(let row=1;row<=n;row++){
+        for(let col=1;col<=n;col++){
+            pattern+=(row==col || col==n-row+1 )?`$char`:` `;
+        }
+        pattern+="\n"
+    }
+console.log(pattern)
+}
+//X();
+
+function y(num){
+    //let n=+prompt()
+    pattern=""
+    for(let row=1;row<=n;row++){
+        for(let col=1;col<=n;col++){
+        pattern+=((row<=Math.trunc(1+n/2) && col==row)  || col==n-row+1 )?`$char`:` `;
+        }
+        pattern+="\n"
+    }
+console.log(pattern)
+}
+//y();
+
+
+function z(num){
+    //let n=+prompt()
+    pattern=""
+    for(let row=1;row<=n;row++){
+        for(let col=1;col<=n;col++){
+        pattern+=( row==1 || row==n || col==n-row+1 )?`$char`:` `;
+        }
+        pattern+="\n"
+    }
+console.log(pattern)
+}
+//z();
+
+
+</script>
+
+</body>
+</html>

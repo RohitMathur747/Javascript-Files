@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        "use strict"
+        main();
+        function main(){
+            
+            let mobile={
+                id:101,
+                brand:"Iphone",
+                model:"14 pro max",
+                price:100000,
+                color:"black",
+                mfd:2022,
+                war:function(mfd){
+                    return 2023-this.mfd;
+                }
+            };
+            console.log(this);
+            console.log(mobile.war());
+            //console.log(mobile);
+            //console.log(mobile.price,mobile.brand);
+            //console.log(mobile["camera"]);
+
+        }
+    </script>    
+</body>
+</html>

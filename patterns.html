@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pattern</title>
+</head>
+<body>
+    
+    <script>
+        let n = 5;
+        let string = "";
+
+        for(let i = 0; i < n; i++) { // external loop
+            for(let j = 0; j < n; j++) { // internal loop
+                string += "*";
+            }
+            string += "\n";
+        }
+        window.alert(string);
+        console.log(string)
+    </script>
+
+    <script>
+        let m = 5;
+        let string1 ="";
+
+        for(let i = 0; i < m; i++) 
+        { 
+            for(let j = 0; j < m; j++) 
+            {
+                if(i === 0 || i === m - 1) 
+                {
+                    string1 +="*";
+                }
+            else {
+                if(j === 0 || j === m - 1) 
+                    {
+                    string1 +="*";
+                    }
+                else 
+                    {
+                    string1 +=" ";
+                    }
+                }
+            }
+            string1 += "\n";
+        }
+        window.alert(string1)
+        console.log(string1)
+    </script>
+
+    <script>
+        let o = 5;
+        let string2 = "";
+        for (let i = 1; i <= o; i++) {
+            for (let j = 1; j <= o - i; j++) {
+                string2 += " ";
+            }
+            for (let k = 0; k < 2 * i - 1; k++) {
+                string2 += "*";
+            }
+                string2 += "\n";
+        }
+        window.alert(string2);
+        console.log(string2)
+    </script>
+
+    <script>
+        let p = 5;
+        let string3 = "";
+// Upside pyramid
+        for (let i = 1; i <= p; i++) {
+  // printing spaces
+            for (let j = p; j > i; j--) {
+                string3 += " ";
+            }
+  // printing star
+            for (let k = 0; k < i * 2 - 1; k++) {
+                string3 += "*";
+            }
+            string3 += "\n";
+        }
+// downside pyramid
+            for (let i = 1; i <= p - 1; i++) {
+  // printing spaces
+                for (let j = 0; j < i; j++) {
+                    string3 += " ";
+                }
+  // printing star
+                for (let k = (p - i) * 2 - 1; k > 0; k--) {
+                    string3 += "*";
+                }
+                string3 += "\n";
+            }
+            window.alert(string3);
+            console.log(string3)
+    </script>
+
+    <script>
+        let q = 5;
+        let string4 = "";
+// Reversed pyramid pattern
+        for (let i = 0; i < q; i++) {
+  // printing spaces
+            for (let j = 0; j < i; j++) {
+                string4 += " ";
+            }
+  // printing star
+            for (let k = 0; k < (n - i) * 2 - 1; k++) {
+                string4 += "*";
+            }
+                string4 += "\n";
+        }
+// pyramid pattern
+            for (let i = 2; i <= q; i++) {
+  // printing spaces
+                for (let j = q; j > i; j--) {
+                    string4 += " ";
+                }
+  // printing star
+                for (let k = 0; k < i * 2 - 1; k++) {
+                    string4 += "*";
+                }
+            string4 += "\n";
+            }
+            window.alert(string4);
+            console.log(string4)
+    </script>
+
+</body>
+</html>

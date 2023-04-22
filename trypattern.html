@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*let n=+prompt("enter no");
+        let string="";
+        for (let i = 0; i <= n - 1; i++) {
+        for (let j = 0; j < i; j++) {
+            string += " ";
+            }
+        for (let k = 0; k < n - i; k++) {
+            string += "*";
+            }
+        string += "\n";
+        }
+        console.log(string);*/        
+
+    </script>
+
+    <script>
+    /*let n = + prompt("enter no");
+    let string = "";
+    for (let i = 0; i < n; i++) {
+        for (let k = 0; k < n - i; k++) {
+            string += "*";
+            }
+    string += "\n";
+    }
+console.log(string);*/
+    </script>
+
+    <script>
+        /*let n=+prompt("enter no");
+        let pattern="";
+        for(let row=1;row<=n;row++){
+            for(let col=1;col<=n;col++){
+                pattern+=col<=n-row?"":"*";
+            }
+            pattern+="\n";
+        }
+        for(let i=1;i<=n-1;i++){
+            for(let j=1;j<n;j++){
+                pattern+=j<=i?"*":"";
+            }
+            pattern+="\n";
+        }
+        console.log(pattern);*/
+        let num=+prompt("enter no");
+        pattern="";
+        for(let i=0;i<num;i++){
+            for(j=0;j<i;j++){
+                if((i+j)%2==0){
+                    console.log("1");
+                }else{
+                    console.log("0");
+                }
+            }
+            console.log("\n");
+        }
+    </script>
+
+</body>
+</html>
